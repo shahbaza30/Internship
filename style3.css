@@ -1,0 +1,96 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 3rem auto 0 auto;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+      border-radius: 8px;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 700px) {
+      .container { grid-template-columns: 1fr; }
+    }
+    /* --- Contact Form --- */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: .3rem;
+    }
+    input, textarea {
+      width: 100%; font-size: 1rem;
+      padding: 0.65rem;
+      margin-bottom: 0.1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .error-message {
+      color: red; font-size: 0.87em; display: none;
+    }
+    .submit-button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 0.75rem; border-radius: 4px;
+      width: 100%; font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .submit-button:hover { background: #218838; }
+    /* --- To-Do List --- */
+    .todo-list {
+      background: #f8f9fa;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+    .todo-list input[type="text"] {
+      width: 70%;
+      display: inline-block;
+    }
+    .todo-list button {
+      background: #007bff;
+      color: white; border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      margin-left: 0.25rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .todo-list ul {
+      margin: 1rem 0 0 0; padding: 0;
+      list-style: none;
+    }
+    .todo-list li {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      background: #fff; padding: 0.65rem;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ececec;
+    }
+    .todo-list .remove {
+      background: #dc3545;
+      margin-left: 0.5rem;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.9em;
+    }
